@@ -1,5 +1,5 @@
 import React from 'react'
-import { BsEnvelope, BsEnvelopePaper } from 'react-icons/bs'
+import {BsEnvelopePaper } from 'react-icons/bs'
 
 const NewsLetter = () => {
   return (
@@ -7,7 +7,8 @@ const NewsLetter = () => {
        <BsEnvelopePaper className="w-16 h-16 mt-20 text-white "/> 
        {/* tracking-widest 是 Tailwind CSS 提供的一个 字间距（letter-spacing）类，用于控制 文本字符之间的间距。 */}
        <h1 className="text-lg sm:text-xl md:text-2xl text-white font-semibold mt-10 tracking-widest">Your Travel Journey Starts Here</h1>
-       <p className="mt-3 text-white text-xs sm:text-sm">Sign up and we'll send the best deals to you </p>
+       {/* 将 ' 转义为：&apos;、&lsquo;、&#39; 或 &rsquo;。 */}
+       <p className="mt-3 text-white text-xs sm:text-sm">Sign up and we&apos;ll send the best deals to you </p>
 
        {/* subscription input and button */}
        <div className="w-full">
